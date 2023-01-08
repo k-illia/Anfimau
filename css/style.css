@@ -8,9 +8,7 @@ body.lock {
     overflow: hidden;
 }
 
-ul {
-    list-style-type: none;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -80,7 +78,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 1121px) {
     .logo {
-        max-width: 130px;
+        max-width: 140px;
     }
 }
 
@@ -993,3 +991,6 @@ ul.slick-dots {
 
 }
 
+ul.slick-dots  {
+    list-style-type: none;
+}
