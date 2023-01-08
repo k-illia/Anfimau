@@ -51,32 +51,12 @@ anchors.forEach(anchor => {
 $(function () {
     $('.swiper-wrapper').slick({
             arrows: false,
-            dots: true
+            dots: true,
+            adaptiveHeight: true
         }
     )
 
 })
-// $(function () {
-//     $('#boxes').slick({
-//             arrows: false,
-//             dots: true,
-//         responsive: [
-//             {
-//                 breakpoint: 5000,
-//                 settings: "unslick"
-//             },
-//             {
-//                 breakpoint: 700,
-//                 settings: {
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1
-//                 }
-//             }
-//         ]
-//         }
-//     )
-//
-// })
 
 
 $(function () {
@@ -92,7 +72,8 @@ $(function () {
                         arrows: false,
                         dots: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+
                     }
                 }
             ]
@@ -103,8 +84,7 @@ $(function () {
 
 $(function () {
     $('#boxes').slick({
-            arrows: false,
-            dots: true,
+
             responsive: [
                 {
                     breakpoint: 5000,
@@ -114,7 +94,10 @@ $(function () {
                     breakpoint: 700,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true,
+
                     }
                 }
             ]
