@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <title>ANFIMAU</title>
 
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="css/slick.css">
 
     <link rel="stylesheet" href="/css/carousel.css">
-    <script src="/js/script.js" defer></script>
     <link rel="stylesheet" href="css/lightbox.css">
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family==Roboto:wght@400;500;700&display=swap"
           rel="stylesheet">
 </head>
 <body>
@@ -34,49 +28,59 @@
                     </a>
 
                 </div>
-                <div class="menu">
+                <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <div class="menu-items">
                     <ul class="menu__list">
+
                         <li class="menu__item">
-                            <a class="menu_link menu__link--active" href="#">About us</a>
+                            <a class="menu__link" href="#about">About us</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Services</a>
+                            <a class="menu__link" href="#services">Services</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Our offer</a>
+                            <a class="menu__link" href="#offer">Our offer</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Certifications </a>
+                            <a class="menu__link" href="#certifications">Certifications </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Project history</a>
+                            <a class="menu__link" href="#history">Project history</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Project history</a>
+                            <a class="menu__link" href="#letters">Reference Letters </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu_link" href="#">Contact us</a>
+                            <a class="menu__link" href="#contact">Contact us</a>
                         </li>
                     </ul>
-                </div>
-                <div class="language"></div>
-                <ul class="language__list">
-                    <li class="language__item">
-                        <a class="language__link" href="">De</a>
-                    </li>
-                    <li class="language__item">
-                        <a class="language__link" href="">En</a>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="language">
+                        <ul class="language__list">
+                            <li class="language__item">
+                                <a class="language__link" href="">De</a>
+                            </li>
+                            <li class="language__item">
+                                <a class="language__link" href="">En</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
             </div>
         </div>
     </div>
 </header>
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__inner">
+            <div class="title">About us</div>
             <div class="about__text">
-                <div class="title">About us</div>
                 <p class="about__text_paragraph">
                     We are fully distributed remote team of 30 highly qualified engineers. We are located primarily
                     in the EU. Our main office is located in Frankfurt am Main (Eschborn), our developers are
@@ -90,8 +94,8 @@
 
     </div>
 </section>
-<section class="services">
-    <div class="container">
+<section class="services" id="services">
+    <div class="container services">
         <div class="services__inner">
             <div class="title">Services</div>
             <div class="services__items">
@@ -164,7 +168,7 @@
         </div>
     </div>
 </section>
-<section class="offer">
+<section class="offer" id="offer">
     <div class="container">
         <div class="title">Our offer</div>
         <div class="offer__inner">
@@ -244,7 +248,7 @@
     </div>
 
 </section>
-<section class="certifications">
+<section class="certifications" id="certifications">
     <div class="container">
         <div class="certifications__inner">
             <div class="title">Certifications</div>
@@ -256,7 +260,7 @@
                 <img src="/img/badge-scrum-pspo1%201.png" alt="">
                 <img src="/img/badge-scrum-sps%201.png" alt="">
             </div>
-            <div class="certifications__boxes">
+            <div class="certifications__boxes" id="boxes">
                 <div class="certifications__box">
                     <div class="certifications__img">
 
@@ -281,7 +285,7 @@
 
 
                     </div>
-                    <div class="certifications__text">AWS Certified Solutions
+                    <div class="certifications__text">AWS Certified Solutions<br>
                         Architect - Associate
                     </div>
                 </div>
@@ -295,7 +299,7 @@
 
 
                     </div>
-                    <div class="certifications__text">AWS Certified SysOps
+                    <div class="certifications__text">AWS Certified SysOps<br>
                         Engineer - Associate
                     </div>
                 </div>
@@ -347,7 +351,7 @@
 
 
                     </div>
-                    <div class="certifications__text">Neural Networks
+                    <div class="certifications__text">Neural Networks<br>
                         and Deep Learning
                     </div>
                 </div>
@@ -361,7 +365,7 @@
 
 
                     </div>
-                    <div class="certifications__text">Structuring Machine
+                    <div class="certifications__text">Structuring Machine<br>
                         Learning Projects
                     </div>
                 </div>
@@ -375,7 +379,7 @@
 
 
                     </div>
-                    <div class="certifications__text">Improving Deep
+                    <div class="certifications__text">Improving Deep<br>
                         Neural Networks
                     </div>
                 </div>
@@ -387,14 +391,14 @@
                         </a>
 
                     </div>
-                    <div class="certifications__text">Convolutiona Neural Networks</div>
+                    <div class="certifications__text">Convolutiona Neural<br> Networks</div>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-<section class="history">
+<section class="history" id="history">
     <div class="container">
         <div class="title">Project history</div>
         <div class="history__inner">
@@ -431,10 +435,12 @@
                             <p><strong>Responsibilities</strong></p>
 
                             <ul>
-                                <li><strong>Cloud Architecture</strong><br />
-                                    Cloud usage analysis, right-sizing assessment</li>
-                                <li><strong>FynOps Processes setup</strong><br />
-                                    Cost analysis and optimization</li>
+                                <li><strong>Cloud Architecture</strong><br/>
+                                    Cloud usage analysis, right-sizing assessment
+                                </li>
+                                <li><strong>FynOps Processes setup</strong><br/>
+                                    Cost analysis and optimization
+                                </li>
                             </ul>
 
                         </div>
@@ -518,7 +524,8 @@
                                 <strong>Responsibilities</strong></p>
 
                             <ul>
-                                <li><strong>Architecture, Technical Design, R&amp;D, PoC, Softare Development</strong><br/>
+                                <li><strong>Architecture, Technical Design, R&amp;D, PoC, Softare
+                                    Development</strong><br/>
                                     Contributed to the development of enterprise architecture behind several
                                     multi-tenant solutions in the area of B2B and B2C through the adoption of Micro
                                     Services, SOA and REST, Message Bus and Enterprise Integration patterns
@@ -536,7 +543,8 @@
                                     supplier collaboration. Lead agile practices adoption both inhouse and in vendor
                                     teams
                                 </li>
-                                <li><strong>Coding, Quality Assurance, Delivery practices. Team Collaboration</strong><br/>
+                                <li><strong>Coding, Quality Assurance, Delivery practices. Team
+                                    Collaboration</strong><br/>
                                     Defined supplier co-operation standards in the area of project execution, coding
                                     standards, global architecture governance, cross-team communication, quality
                                     assurance process and product acceptance criteria
@@ -566,15 +574,15 @@
                                 <li><strong>Software Development </strong><br/>
                                     Web applications, standalone applications, windows and web services, enterprise
                                     applications, distributed systems
-                                   </li>
+                                </li>
                                 <li><strong>Project Management </strong><br/>
                                     Client communications, Team management, requirements analysis and development
-                                   </li>
+                                </li>
                                 <li><strong>Research </strong><br/>
                                     Effective software development methodologies, projects estimations frameworks and
                                     approaches, existing tools and frameworks in software development utilization
                                     opportunities and shortcomings
-                                   </li>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -631,11 +639,13 @@
                     <div class="history__slide">
                         <div class="history__slide-title">Software Engineer (.NET)</div>
                         <div class="history__slide-text">
-                            <p><strong>SaM Solutions GmbH. Minsk, Belarus</strong><br />
-                                <br />
-                                September 2007 - April 2009<br />
-                                <br />
-                                <strong>As a Software engineer I was responsible for development of a production line automation system for small business based on Lean Manufacturing methodology.</strong></p>
+                            <p><strong>SaM Solutions GmbH. Minsk, Belarus</strong><br/>
+                                <br/>
+                                September 2007 - April 2009<br/>
+                                <br/>
+                                <strong>As a Software engineer I was responsible for development of a production line
+                                    automation system for small business based on Lean Manufacturing
+                                    methodology.</strong></p>
 
                         </div>
                     </div>
@@ -646,11 +656,12 @@
                     <div class="history__slide">
                         <div class="history__slide-title">Software Engineer</div>
                         <div class="history__slide-text">
-                            <p><strong>Minsk City Executive Committee. Minsk, Belarus</strong><br />
-                                <br />
-                                September 2005 - April 2007<br />
-                                <br />
-                                <strong>I developed business solutions in Public Sector in the areas of business registration, assets management, registry office database.</strong></p>
+                            <p><strong>Minsk City Executive Committee. Minsk, Belarus</strong><br/>
+                                <br/>
+                                September 2005 - April 2007<br/>
+                                <br/>
+                                <strong>I developed business solutions in Public Sector in the areas of business
+                                    registration, assets management, registry office database.</strong></p>
 
                         </div>
                     </div>
@@ -662,12 +673,11 @@
         </div>
     </div>
 </section>
-
-<section class="certifications letters">
+<section class="certifications letters" id="letters">
     <div class="container letters">
         <div class="certifications__inner letters">
             <div class="title">Reference Letters</div>
-            <div class="certifications__boxes letters">
+            <div class="certifications__boxes letters" id="boxes-lettrs">
 
                 <div class="certifications__box letters">
                     <div class="certifications__img letters">
@@ -777,10 +787,10 @@ Deutsche Lufthansa AG">
         </div>
     </div>
 </section>
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container">
+        <div class="title">Contact us</div>
         <div class="contact__inner">
-            <div class="title">Contact us</div>
             <div class="contact__address">
                 <h3>Anfimau Industry Solutions GmbH</h3>
                 <p>
@@ -799,11 +809,11 @@ Deutsche Lufthansa AG">
         </div>
     </div>
 </section>
-</body>
+
 <footer>
     <div class="container">
         <div class="footer__inner">
-            <div class="logo">
+            <div class="logo footer-bottom">
                 <a class="logo__link" href="#">
                     <p class="logo__text">ANFIMAU</p>
                     <p class="logo__paragraph">Industry Solutions</p>
@@ -834,4 +844,10 @@ Deutsche Lufthansa AG">
         </div>
     </div>
 </footer>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="/js/script.js" defer></script>
+<script src="js/slick.min.js"></script>
+</body>
 </html>
