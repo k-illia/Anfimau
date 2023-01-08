@@ -74,6 +74,7 @@
 
 @media (max-width: 1121px) {
     .menu__body.active {
+        overflow: auto;
         transform: translateX(0);
     }
 }
@@ -125,6 +126,7 @@
         flex-direction: column;
         align-items: start;
         gap: 28px;
+        overflow: auto;
     }
 }
 
